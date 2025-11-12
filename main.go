@@ -3,8 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	//read the todos from the file
-	//present the user with options on what they want to do
 	var input int
 	fmt.Println("What would you like to do?")
 	fmt.Println("All changes will be written to file")
@@ -20,6 +18,6 @@ func main() {
 	case 2:
 		items = removeItem(items)
 	case 3:
-		break
+		printTasks(items)
 	}
 }
